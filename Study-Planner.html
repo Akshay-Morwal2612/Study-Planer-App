@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner</title>
+    <link rel="stylesheet" href="Study-Planner.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="heading">Schedule Planner.</h1>
+        <p>Smart Study Planner is a web application that helps students manage their study time efficiently. It analyzes
+            subject difficulty and deadlines to generate a personalized daily study plan. Using a simple scheduling
+            algorithm, it prioritizes tasks and distributes study time effectively, helping users stay organized and
+            focused.</p>
+    </header>
+
+    <div class="main-container">
+
+        <form action="">
+            <input type="text" id="subject" placeholder="Enter Subject Name." list="subjectList">
+            <datalist id="subjectList">
+                <option value="Math"></option>
+                <option value="Science"></option>
+                <option value="English"></option>
+                <option value="Hindi"></option>
+                <option value="Gujarati"></option>
+            </datalist>
+
+
+            <input type="number" id="difficulty" placeholder="Enter Difficulty Rate (0-5)." min="0" max="5">
+            
+            <input type="date" name="deadline" id="deadline">
+            
+            <button type="submit" id="submitBtn">Generate Schedule</button>
+            
+        </form>
+        
+        <div id="output" class="output-box">
+            <h2>Your Study Plan</h2>
+
+            <div class="cards-container">
+                <!-- cards come here by JS. -->
+            </div>
+        </div>
+
+    </div>
+
+    <script src="Study-Planner.js"></script>
+</body>
+
+</html>
